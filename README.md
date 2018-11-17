@@ -21,24 +21,21 @@ to get set up:
 #### Installing the dependencies and setting up the files:
 1. Install [Vagrant](https://www.vagrantup.com/)
 2. Install [VirtualBox](https://www.virtualbox.org/)
-1. Download the vagrant setup files from [Udacity's Github](https://github.com/udacity/fullstack-nanodegree-vm)
+3. Download the vagrant setup files from [Udacity's Github](https://github.com/udacity/fullstack-nanodegree-vm)
 These files configure the virtual machine and install all the tools needed to run this project.
-3. Download the database setup: [data](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip)
-4. Unzip the data to get the newsdata.sql file.
-5. Put the newsdata.sql file into the vagrant directory
-6. Download this project: [log analysis](https://github.com/michellejl/log_analysis)
-7. Upzip as needed and copy all files into the vagrant directory into a folder called log_analysis
+4. Download the database setup: [data](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip)
+5. Unzip the data to get the newsdata.sql file.
+6. Put the newsdata.sql file into the vagrant directory
+7. Download this project: [log analysis](https://github.com/michellejl/log_analysis)
+8. Upzip as needed and copy all files into the vagrant directory into a folder called log_analysis
 #### Start the Virtual Machine:
-8. Open Terminal and navigate to the project folders we setup above.
-9. cd into the vagrant directory
-10. Run ``` vagrant up ``` to build the VM for the first time.
-11. Once it is built, run ``` vagrant ssh ``` to connect.
-12. cd into the correct project directory: ``` cd /vagrant/log_analysis ```
+9. Open Terminal and navigate to the project folders we setup above.
+10. cd into the vagrant directory
+11. Run ``` vagrant up ``` to build the VM for the first time.
+12. Once it is built, run ``` vagrant ssh ``` to connect.
+13. cd into the correct project directory: ``` cd /vagrant/log_analysis ```
 #### Load the data into the database:
-13. Load the data using the following command: ``` psql -d news -f newsdata.sql ```
-14. *Note:* Checkout Udacity's [FAQ](https://classroom.udacity.com/nanodegrees/nd004/parts/8d3e23e1-9ab6-47eb-b4f3-d5dc7ef27bf0/modules/bc51d967-cb21-46f4-90ea-caf73439dc59/lessons/262a84d7-86dc-487d-98f9-648aa7ca5a0f/concepts/a9cf98c8-0325-4c68-b972-58d5957f1a91) 
-page if you are running into any errors here.
-
+14. Load the data using the following command: ``` psql -d news -f newsdata.sql ```
 
 ## Run The Project Already!
 1. You should already have vagrant up and be connected to it. 
@@ -60,6 +57,3 @@ Generating this information will take several seconds, but will now start loadin
     DAYS WITH MORE THAN 1% ERRORS:
         July 17, 2016 -- 2.3% errors
 
-## Other Things to Note:
-I specifically chose to write all my queries without using any views. Mostly 
-because it seemed more challenging to do so.
